@@ -1,0 +1,52 @@
+<!--logs.wxml-->
+<!--头部个人信息-->
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <view class="userinfo-left">
+      <text style="font-size:40rpx;color:#000;">{{userInfo.nickName}}</text>
+      <text style="font-size:30rpx;color:#adabab;margin-top:10rpx;">Hello World!</text>
+    </view>
+    
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </block>
+</view>
+<!--中间部分-->
+<view class="middle">
+  <view class="resume" hover-class="hover-class">
+    <image style="height:50rpx;width:50rpx;" src="/imgs/resume.png"></image>
+    <text style="font-size:34rpx;color:#000;padding-left:20rpx;padding-right:360rpx;">简历</text>
+    <text style="font-size:26rpx;color:#ccc">完整度:</text>
+    <text style="font-size:26rpx;color:#2cc988">{{degree}}</text>
+    <image style="height:40rpx;width:40rpx;position:absolute;right:20rpx;" src="/imgs/right.png"></image>
+  </view>
+  <view class="hh" hover-class="hover-class">
+    <image style="height:50rpx;width:50rpx;" src="/imgs/record.png"></image>
+    <text style="font-size:34rpx;color:#000;padding-left:20rpx;padding-right:360rpx;">投递记录</text>
+    <image style="height:40rpx;width:40rpx;position:absolute;right:20rpx;" src="/imgs/right.png"></image>
+  </view>
+  <view class="hh" hover-class="hover-class">
+    <image style="height:50rpx;width:50rpx;" src="/imgs/collect.png"></image>
+    <text style="font-size:34rpx;color:#000;padding-left:20rpx;padding-right:360rpx;">职位收藏</text>
+    <image style="height:40rpx;width:40rpx;position:absolute;right:20rpx;" src="/imgs/right.png"></image>
+  </view>
+  <view class="hh" hover-class="hover-class">
+    <image style="height:50rpx;width:50rpx;" src="/imgs/advice.png"></image>
+    <text style="font-size:34rpx;color:#000;padding-left:20rpx;padding-right:360rpx;">投递记录</text>
+    <image style="height:40rpx;width:40rpx;position:absolute;right:20rpx;" src="/imgs/right.png"></image>
+  </view>
+  <view class="hh" hover-class="hover-class">
+    <image style="height:50rpx;width:50rpx;" src="/imgs/mine.png"></image>
+    <text style="font-size:34rpx;color:#000;padding-left:20rpx;padding-right:360rpx;">隐私设置</text>
+    <image style="height:40rpx;width:40rpx;position:absolute;right:20rpx;" src="/imgs/right.png"></image>
+  </view>
+  <view class="choose" >
+    <view class="choose-m" hover-class="hover-class">
+      <text style="font-size:34rpx;color:#000;aline">切换至我要招人</text>
+    </view>
+    <view class="choose-m" hover-class="hover-class">
+      <text style="font-size:34rpx;color:#ccc;">退出登录</text>
+    </view>
+  </view>
+</view>
+
