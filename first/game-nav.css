@@ -1,0 +1,90 @@
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+.game-nav {
+    width: 466px;
+    height: 256px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    background: #fff;
+    position: relative;
+}
+.left {
+    width: 265px;
+    height: 244px;
+    float: left;
+    margin-top: 12px;
+}
+.left-top {
+    width: 240px;
+    height: 120px;
+    padding-left: 12px;
+    border-radius: 4px;
+}
+.left-top span {
+    width: 220px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 116px;
+    left: 12px;
+    font-size: 12px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    background: url(shadow.png) repeat-x;
+}
+.left-bottom {
+    margin-top: 14px;
+}
+.left-bottom a {
+    width: 64px;
+    height: 104px;
+    padding: 6px 12px 0;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.left-bottom img {
+    height: 64px;
+    width: 64px;
+    border-radius: 12px;
+}
+.left-bottom span {
+    width: 4em;
+    height:14px;
+    margin: 8px auto;
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    color: #222;
+    overflow: hidden;
+}
+.right {
+    width: 195px;
+    height: 231px;
+    margin-top: 12px;
+    float: right;
+} 
+.all {
+    padding: 35px 0 0 6px;
+    background: url(title.png) no-repeat;
+}
+.all a{
+    display: block;
+    padding-left: 16px;
+    line-height: 28px;
+    color: #222;
+    font-size: 12px;
+}
+.all a:hover {
+    color: #00a1d8;
+    background-color: #e5e9ef;
+}
+.all span {
+    width: 13em;
+    height: 28px;
+    display: block;
+    overflow: hidden;
+}

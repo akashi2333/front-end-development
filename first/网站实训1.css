@@ -1,0 +1,311 @@
+/*页面顶部*/
+body, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.topbar {
+    background-color: #333; 
+    height: 40px;
+}
+.container {
+    margin: 0 auto;
+    width: 1226px; 
+}
+.container::before .clearfix::before {
+    content: " ";
+    display: table;
+}
+.container::after .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.topbar-nav {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+.topbar-nav span {
+    font-size: 12px;
+    color: #424242;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+.topbar-info,.topbar-cart {
+    float: right;
+}
+.topbar a {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.topbar a:hover {
+    color: #fff;
+}
+.topbar-cart a {
+    background-color: #424242;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    display: block;
+    text-align: center;
+}
+.topbar-cart a:hover {
+    background-color: #fff;
+    color: #ff6700;
+}
+.topbar-cart span {
+    margin-left: -4px;
+    font-size: 12px;
+}
+.topbar-info a {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    padding: 0 5px;
+}   
+.topbar-info span {
+    font-size: 12px;
+    float: left;
+    font-family: sans-serif;
+    color: #424242;
+    height: 40px;
+    line-height: 40px;
+}   
+.topbar-info .sep {
+    padding: 0 10px;
+}
+.topbar-info {
+    margin-right: 15px;
+}
+/*页面服务*/
+.header {
+    height:100px;
+}
+.header-logo a {
+    background: url(小米logo.png) no-repeat 50% 50%;
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+.header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+    height: 55px;
+}
+.header-logo a.lr {
+    text-indent: -99999em;
+    text-align: left;
+}
+.header-nav {
+    float: left;
+    width: 820px;
+    height: 100px;
+}
+.header-nav .nav-list {
+    width: 820px;
+    height: 88px;
+    font-size: 16px;
+    padding: 12px 0 0 30px;
+}
+.header-nav .nav-list .nav-category {
+    float: left;
+    padding: 0 15px 0 0;
+    width:127px;
+}
+.header-nav .nav-list .nav-category a {
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: #333;
+}
+.header-nav .nav-list .nav-item {
+    float: left;
+}
+.header-nav .nav-list .nav-item a {
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+.header-nav .nav-list .nav-item a:hover {
+    color: #ff6700;
+}
+.header-search {
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+}
+.header-search .search-form {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 296px;
+}
+.header-search .search-form .search-text {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    display: block;
+    height: 46px;
+    width: 245px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+}
+.header-search .search-form .search-btm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 50px;
+    width: 52px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    background-color: #fff;
+    color: #616161;
+    outline: 0;
+}
+.header-search .search-form .search-btm:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+/*主要部分*/
+.seckill {
+    background-color: #f5f5f5;
+}
+.seckill-head {
+    margin-top: 19px;
+    height: 170px;
+    background: url(bj.jpg) no-repeat 50% 0;
+}
+.seckill-nav {
+    margin: -68px 0 22px;
+}
+.seckill-navfixed {
+    position: fixed;
+    width: 1226px;
+    top: 60px;
+}
+.seckill-nav ul {
+    height: 68px;
+    background-color: #414141;
+}
+.seckill-nav li {
+    display: block;
+    float: left;
+    color: #fff;
+    width: 20%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    cursor: pointer;
+}
+.seckill-nav li em {
+    font-style: normal;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.seckill-nav li .ff {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.seckill-nav .active {
+    background-color: #f1393a;
+}
+.seckill-nav ul li .ff em {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    margin-left: 0px;
+}
+.seckill-goods {
+    overflow: hidden;
+}
+.seckill-goods .active {
+    display: block;
+}
+.seckill-goods ul {
+    margin-right: -13px;
+    display: none;
+}
+.seckill-goods li {
+    float: left;
+    height: 190px;
+    width: 400px;
+    background-color: #fff;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+.seckill-goods .bg {
+    float: left;
+    height: 190px;
+    width: 190px;
+}
+.seckill-goods .bg img {
+    height: 190px;
+}
+.seckill-goods .info {
+    margin-left: 210px;
+    width: 190px;
+    height: 190px;
+    padding-top: 30px;
+}
+.seckill-goods .info .name {
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+}
+.seckill-goods .info .tips {
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 12px;
+    margin-top: 10px;
+}
+.seckill-goods .info .price {
+    font-size: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+    line-height: 16px;
+}
+.seckill-goods .info .price del {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.seckill-goods .info .btn {
+    display: inline-block;
+    font-size: 14px;
+    width: 118px;
+    height: 28px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 19px;
+}
+.seckill-notice {
+    font-size: 12px;
+    color: #999;
+    margin-top: 100px;
+    padding-bottom: 35px;
+}
