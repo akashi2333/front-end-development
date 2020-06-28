@@ -130,5 +130,9 @@ li {
 .content {
   margin-top: 50px;
 }
+.content /deep/ .del {
+    width: 0;
+    height: 0;
+}
 </style>
 

@@ -216,6 +216,9 @@ h3 {
   padding: 0 40px 50px 40px;
   min-width: 700px;
 }
-
+.content /deep/ .del {
+    width: 0;
+    height: 0;
+}
 </style>
 
