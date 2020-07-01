@@ -111,7 +111,7 @@ img {
   padding: 30px 40px 30px 60px;
 }
 li {
-  background-color: #eee;
+  background-color: #fff;
   width: 100%;
   height: 40px;
 }

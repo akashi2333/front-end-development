@@ -156,6 +156,9 @@ export default {
 </script>
 
 <style scoped>
+ul {
+  list-style: none;
+}
 /*评论*/
 .comment-input {
     margin-left: 10px;

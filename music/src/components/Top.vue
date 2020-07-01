@@ -51,10 +51,6 @@ export default {
                     path: '/song-list'
                 },
                 {
-                    name: '排行榜',
-                    path: '/ranking'
-                },
-                {
                     name: '歌手',
                     path: '/singer'
                 },

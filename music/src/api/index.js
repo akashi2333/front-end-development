@@ -37,10 +37,6 @@ export const getCollectionOfUser = (userId) => get(`collection/detail?userId=${u
 // 添加收藏的歌曲 type: 0 代表歌曲， 1 代表歌单
 export const setCollection = (params) => post(`collection/add`, params)
 
-//========================> 排行榜 API
-//返回排行榜列表
-export const getSortList = () => get('sort')
-
 
 // =======================> 评分 API
 // 提交评分

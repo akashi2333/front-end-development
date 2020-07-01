@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../pages/Home.vue'
 import SongList from '../pages/SongList.vue'
-import Ranking from '../pages/Ranking.vue'
 import Singer from '../pages/Singer.vue'
 import MyMusic from '../pages/MyMusic.vue'
 import SongListAlbum from '../pages/SongListAlbum.vue'
@@ -17,7 +16,6 @@ import Lyric from '../pages/Lyric.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '*',
@@ -51,11 +49,6 @@ export default new Router({
       path: '/song-list',
       name: 'song-list',
       component: SongList,
-    },
-    {
-      path: '/ranking',
-      name: 'ranking',
-      component: Ranking,
     },
     {
       path: '/singer',

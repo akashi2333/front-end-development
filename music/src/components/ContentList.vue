@@ -4,11 +4,6 @@
       <li class="content-item" v-for="(item, index) in contentList" :key="index">
         <div class="kuo" @click="goAblum(item, item.name)">
           <img class="item-img" :src="attachImageUrl(item.pic)" alt="">
-          <div class="mask"  @click="goAblum(item, item.name)">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-bofang"></use>
-            </svg>
-          </div>
         </div>
         <p class="item-name">{{item.name || item.title}}</p>
       </li>
@@ -18,7 +13,12 @@
 <script>
 import {mixin} from '../mixins'
 export default {
-    name: 'content-list',
+  name: 'content-list',
+  data(){
+    return {
+      imgurl: require('@/assets/stop.png')
+    }
+  },
   mixins: [mixin],
   props: [
     'contentList'
@@ -69,5 +69,20 @@ export default {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     margin: 10px 8px;
+}
+.item-img {
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.kuo{
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.kuo :hover {
+  cursor: pointer;
 }
 </style>

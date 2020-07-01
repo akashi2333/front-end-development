@@ -1,4 +1,4 @@
-import { getSongOfSingerName, getCollectionOfUser, getSortList } from '../api/index'
+import { getSongOfSingerName, getCollectionOfUser } from '../api/index'
 import { mapGetters } from 'vuex'
 
 export const mixin = {
@@ -18,7 +18,7 @@ export const mixin = {
     },
     // 获取图片信息
     attachImageUrl (srcUrl) {
-      return srcUrl ? this.$store.state.configure.HOST + srcUrl || '../assets/user.png' : ''
+      return srcUrl ? this.$store.state.configure.HOST + srcUrl || '../assets/img/user.jpg' : ''
     },
     attachBirth (val) {
       let birth = String(val).match(/[0-9-]+(?=\s)/)
@@ -43,18 +43,6 @@ export const mixin = {
       this.$store.commit('setTitle', this.replaceFName(name))
       this.$store.commit('setArtist', this.replaceLName(name))
       this.$store.commit('setLyric', this.parseLyric(lyric))
-      getSortList()
-        .then(res => {
-          for (let item of res) {
-            if (item.songId === id) {
-              this.$store.commit('setIsActive', true)
-              break
-            }
-          }
-        })
-        .catch(err => {
-          console.log(err)
-        })
       if (this.loginIn) {
         this.$store.commit('setIsActive', false)
         getCollectionOfUser(this.userId)
