@@ -86,6 +86,9 @@ export default {
       return this.albumDatas.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
     }
   },
+  mounted () {
+    this.handleChangeView('全部歌单')
+  },
   methods: {
     // 获取当前页
     handleCurrentChange (val) {

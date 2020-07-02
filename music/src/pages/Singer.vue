@@ -64,6 +64,9 @@ export default {
       return this.albumDatas.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize)
     }
   },
+  created () {
+    this.getAllSinger()
+  },
   methods: {
     // 获取当前页
     handleCurrentChange (val) {

@@ -56,7 +56,7 @@ export default {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); 
     position: relative;
 }
-.content-item :hover {
+.content-item .kuo :hover {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 .content-item :hover .item-img {
